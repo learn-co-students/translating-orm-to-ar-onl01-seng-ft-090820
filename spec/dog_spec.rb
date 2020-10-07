@@ -35,6 +35,7 @@ describe "Dog" do
 
   describe '.save' do
     it 'saves an instance of the dog class to the database and then sets the given dogs `id` attribute' do
+      binding.pry 
       dog = Dog.new({name: "Fido", breed: "lab"})
       dog.save
       expect(dog.id).to eq(1)
